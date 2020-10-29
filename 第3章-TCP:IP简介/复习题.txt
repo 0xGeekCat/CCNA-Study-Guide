@@ -1,0 +1,75 @@
+3.8复习题
+
+ (1)发生DHCP IP地址冲突时，结果将如何？🔔C
+ A.代理ARP将修复这种问题
+ B.客户端使用免费ARP修复这种问题
+ C.管理员必须在DHCP服务器中手工消除冲突
+ D.DHCP服务器将给发生冲突的两台计算机分配新的IP地址
+
+ (2)下面哪项让路由器对发送给远程主机的ARP请求作出响应？🔔E ❗️C
+ A.网关DP  B.逆向ARP(RARP)  C.代理ARP
+ D.反向ARP(IARP)  E.地址解析协议(ARP)
+
+ (3)你想实现一种自动配置IP(包括IP地址、子网掩码、默认网关和DNS信息)的机制，为此应使用哪种协议？🔔C
+ A.SMTP  B.SNMP  C.DHCP  D.ARP
+
+ (4)哪种协议用于查找本地设备的硬件地址？🔔B
+ A.RARP  B.ARP  C.IP  D.ICMP  E.BootP
+
+ (5)下面哪3项是TCP/IP模型包含的层？🔔C、D、E ❗️A、C、D
+ A应用层  B会话层  C传输层  D因特网层  E数据链路层  F物理层
+
+ (6)哪类网络最多只能包含254台主机？🔔C
+ A.A类  B.B类  C.C类  D.D类  E.E类
+
+ (7)下面哪两项描述了DHCP发现消息？🔔A、B
+ A.它将FF:FF:FF:FF:FF:FF用作第2层广播地址
+ B.它将UDP用作传输层协议
+ C.它将TCP用作传输层协议
+ D.它不使用第2层目标地址
+
+ (8)Telnet使用哪种第4层协议？🔔B
+ A.IP  B.TCP  C.TCP/IP  D.UDP  E.ICMP
+
+ (9)DHCP客户端如何确保没有其他计算机使用分配给它的IP地址？🔔D
+ A.确认收到了TCP数据段
+ B.Ping自己的地址，看能不能检测到响应
+ C.广播代理ARP请求
+ D.广播免费ARP请求
+ E.远程登录自己的IP地址
+
+ (10)下面哪3项服务使用TCP? 🔔B、D、E
+ A.DHCP  B.SMTP  C.SNMP  D.FTP  E.HTTP  F.TFTP
+
+ (11)下面哪3种服务使用UDP? 🔔A、C、F
+ A.DHCP  B.SMTP  C.SNMP  D.FTP  E.HTTP  F.TFTP
+
+ (12)下面哪3种TCP/IP协议用于OSI模型的应用层？🔔C、D、E
+ A.IP  B.TCP  C.Telnet  D.FTP  E.TFTP
+
+ (13)下图描述的是哪种协议的报头？🔔C
+ A.IP  B.ICMP  C.TCP  D.UDP  E.ARP  F.RARP
+
+ (14)使用Telnet或FTP时，你将使用哪层生成数据？🔔A
+ A.应用层  B.表示层  C.会话层  D.传输层
+
+ (15)DoD模型也叫TCP/IP栈，它包含4层。请问DoD模型的哪层对应OSI模型的网络层？🔔C
+ A.应用层  B.主机到主机层  C.因特网层  D.网络接入层
+
+ (16)下面哪两个是私有IP地址？🔔C、E
+ A.12.0.0.1  B.168.172.19.39  C.172.20.14.36  D.172.33.194.30  E.192.168.24.43
+
+ (17)TCP/IP栈的哪层对应OSI模型的传输层？🔔B
+ A.应用层  B.主机到主机层  C.因特网层  D.网络接入层
+
+ (18)下面哪两种有关ICMP的说法是正确的？🔔B、C
+ A.ICMP保证数据报的传递
+ B.ICMP可向主机提供有关网络故障的信息
+ C.ICMP分组被封装在IP数据报中
+ D.ICMP分组被封装在UDP数据报中
+
+ (19)下面哪项是B类网络地址范围的二进制表示？🔔C
+ A.O1xxxxxx     B.Oxxxxxxx      C.10xxxxxx      D.110xxxxx
+
+ (20)下面哪种协议使用TCP和UDP？🔔D
+ A.FTP  B.SMTP  C.Telnet  D.DNS
