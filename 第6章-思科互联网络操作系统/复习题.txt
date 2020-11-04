@@ -1,0 +1,129 @@
+6.10复习题
+
+ (1)当你输入show running-config时，得到如下输出
+ [output cut]
+ line console 0
+      Exec-timeout 1 44
+      Password 7 098C0BQR
+      Login
+ [output cut]
+ 请问命令exec-timeout后面的两个数字是什么意思？🔔C
+ A.如果44秒内没有输入命令，控制台连接将关闭
+ B.如果在1小时44分扫内没有检测到路由器活动，控制台将被锁定
+ C.如果在1分44秒内没有输入命令，控制台连接将关闭
+ D.如果你通过Telnet连接到该路由器，必须在1分44秒内检测到输入，否则该连接将关闭
+
+ (2)下面哪种连接路由器的方式是带外方式？🔔D
+ A.串行接口  B.VTY端口  C.HTTP端口  D.辅助端口
+
+ (3)在路由器上配置SSH时，必须执行下面哪两个命令？🔔C、D
+ A.enable secret password    B.exec-timeout 0 0
+ C.ip domain-name name       D.username name password password
+ E.ip ssh version 2
+
+ (4)下面哪个命令指出接口serial 0连接的是DTE电缆还是DCE电缆？🔔C
+ A.sh int sO             B.sh int serial 0
+ C.show controllers s 0  D.show serial 0 controllers
+
+ (5)下面哪项是思科路由器上正确的文件和默认存储位置组合？🔔C
+ A.IOS/NVRAM  B.启动配置/闪存  C.IOS/闪存  D.运行配置/NVRAM
+
+ (6)你设置了控制台密码，但显示配置时没有显示该密码，而类似于下面这样：
+ [output cut]
+ Line console 0
+      Exec-timeout 1 44
+      Password 7 O98COBQR
+      Login
+ [output cut]
+ 请问哪个命令导致该密码以这样的方式存储？🔔B
+ A.encrypt password               B.service password-encryption
+ C.service-password-encryption    D.exec-timeout 1 44
+
+ (7)下面哪个命令选择路由器上所有的默认VTY端口以便对其进行配置？🔔B
+ A.Router# line vty 0 4              B.Router(config)# line vty 0 4
+ C.Router(config-if)# line console 0  D.Router(config)# line vty all
+
+ (8)下面哪个命令将启用加密密码设置为Cisco？🔔C
+ A.enable secret password Cisco      B.enable secret cisco
+ C.enable secret Cisco               D.enable password Cisco
+
+ (9)要让管理员在登录路由器时看到一条消息，可使用哪个命令？🔔C
+ A.message banner motd                B.banner message motd
+ C.banner motd                        D.message motd
+
+ (10)下面哪个提示符表明当前处于特权模式？🔔C
+ A.router(config)#    B.router>      C.router#      D.router(config-if)
+
+ (11)要将RAM中的配置存储到NVRAM中，可使用哪个命令？🔔D
+ A.Router(config)# copy current to starting
+ B.Router# copy starting to running
+ C.Router(config)# copy running-config startup-config
+ D.Router# copy run start
+
+ (12)当你从路由器Corp视图登录路由器SFRouter时，收到如下消息：
+ Corp# telnet SFRouter
+ Trying SFRouter (10.0.0.1)...Open
+
+ Password required, but none set
+ [Connection to SFRouter closed by foreign host]
+ Corp#
+ 要解决这种问题，可使用下面那个命令序列？🔔D
+ A.Corp(config)# line console 0
+   Corp(Config-line)# password password
+   Corp(config-line)# login
+ B.SFRemote(config)#line console 0
+   Corp(config-line)#enable secret password
+   Corp(config-line)# login
+ C.Corp(config)# line vty 0 4
+   Corp(Config-line)# password password
+   Corp(config-line)# login
+ D.SFRemote(config)#line vty 0 4
+   Corp(config-line)# password password
+   Corp(config-line)# login
+
+ (13)下面哪个命令删除路由器上NVRAM的内容？🔔D
+ A.delete NVRAM
+ B.delete startup-config
+ C.erase NVRAM
+ D.erase start
+
+ (14)你执行命令show interface serial 0时出现如下内容，请问该接口存在什么问题？🔔B
+ SerialO is administratively down, line protocol is down
+ A.存活定时器不匹配              B.管理员禁用了该接口
+ C.管理员正通过该接口执行Ping操作  D.该接口没有连接电缆
+
+ (15)下面哪个命令显示路由器上所有接口的可配置参数和统计信息？🔔C
+ A.show running-config
+ B.show startup-config
+ C.show interfaces
+ D.show versions
+
+ (16)如果你删除NVRAM的内容并重启路由器，将进入哪种模式？🔔C
+ A.特权模式  B.全局模式  C.设置模式  D.NVRAM载入模式
+
+ (17)你在路由器上输入如下命令收到了如下消息：
+ Router#show serial 0/0
+ % Invalid input detected at '^' marker
+ 请问为何会出现这种错误消息？🔔D
+ A.需要在特权模式下
+ B.serial和0/0之间不能有空格
+ C.该路由器没有借口serial 0/0
+ D.命今不完整
+
+ (18)你输入Router# sh ru时看到错误消息a % ambiguous command，请问为何会出现这种错误消息？🔔B
+ A.需要在该命令中指定额外的选项或参数   B.有多个以字母ru打头的show命令
+ C.没有以字母ru打头的show命令        D.在错误的路由器模式下执行了该命令
+
+ (19)下面哪两个命令显示接口的当前IP地址以及第1层和第2层的状态？🔔D、B
+ A.show version
+ B.show interfaces
+ C.show controllers
+ D.show ip interface
+ E.show running-config
+
+ (20)如果你输入show interface serial 1时看到如下内容，问题出在OSI模型的哪一层？🔔A
+ Serial1 is down,line protocol is down
+ A.物理层
+ C.网络层
+ B.数据链路层
+ D.网络没有问题，是路由器出现了问题

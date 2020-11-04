@@ -1,7 +1,7 @@
 书面实验6.8
 
  (1)要设置串行接口，使其时钟频率64Kbit/s提供给另一台路由器，可使用什么命令？
- 🔔Router(config-if)# clock rate 64 000
+ 🔔Router(config-if)# clock rate 64000
 
  (2)如果你远程登录一台路由器时收到相应connection refused, password not set，为避免收到这种消息，且不被提示提供密码，应在目标路由器上执行什么命令？
  🔔Router(config-line)# no login
@@ -19,7 +19,6 @@
 
  (6)要将启用加密密码设置为cisco，应执行哪些命令？
  🔔Router(config)# enable secret cisco
- 🔔Router(config)# login
 
  (7)要判断接口Serial 0/2是否应提供时钟频率，可使用什么命令？
  🔔Router# show controllers Serial 0/2
@@ -28,7 +27,7 @@
  🔔Router# show terminal
 
  (9)你要重启路由器并用当前的启动配置替换运行配置，应使用什么命令？
- 🔔Router# copy startup-config running-config
+ ❗️Router# reload
 
  (10)如何将路由器名称设置为Chicago？
  🔔Router(config)# hostname Chicago
