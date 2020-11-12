@@ -1,0 +1,95 @@
+7.14复习题
+
+ (1)命令confreg 0x2142的作用是什么？🔔B
+ A.用于重启路由器  B.用于绕过NVRAM中的配置  C.用于进入ROM监控模式  D.用于查看丢失的口令
+
+ (2)哪个命令将用于复制IOS到你网络中的备份主机上？🔔E
+ A.transfer IOS to 172.16.10.1  B.copy run start  C.copy tftp flash  D.copy start tftp  E.copy flash tftp
+
+ (3)你正在排除公司网络中的一个连接故障，并且希望隔离这个问题。你怀疑在通往不可达网络路由上的某台路由器发生故障。你可以使用IOS哪个用户可执行命令？🔔️B
+ A.Router>ping
+ B.Router>trace
+ C.Router>show ip route
+ D.Router>show
+ E.Router>show cdp neighbors
+ 📣traceroute简称trace
+
+ (4)你从某个网络主机复制了一个配置文件到路由器的RAM中。这个配置文件看起来是正确的，但根本不能工作。导致这个问题的原因是什么？🔔A ❗️C
+ A.你复制了错误的配置到RAM中
+ B.你将配置复制到了闪存中
+ C.这一副本不能不考虑在正在运行配置中的shutdown命令的影响
+ D.IOS将会在这一copy命令执行后被破坏
+ 📣不是很懂
+
+ (5)某网络管理员想在不删除当前安装的IOS的情况下，对路由器的IOS进行升级。哪个命令可以显示当前IOS文件占用的内存空间，并指出是否有足够的可用空间保存当前的和新的映像文件？🔔B
+ A.show version  B.show flash  C.show memory  D.show buffers  E.show running-config
+
+ (6)公司办公室发给你一台新的要连接的路由器，连接好控制台电缆后．你发现在这个路由器上已经存在一个配置。在向这个路由器输人新的配置之前，你需要做一些什么？🔔C
+ A.应该擦除RAM内容并重启路由器  B.应该擦除闪存内容并重启路路由器
+ C.应该擦除NVRAM内容并重启路山器  D.应该输人并保存新配锻文件
+
+ (7)哪个命令可以加载新版本的思科IOS到路由器中？🔔D
+ A.copy flash ftp  B.copy ftp flash  C.copy flash tftp  D.copy tftp flash
+
+ (8)哪个命令可以显示路由器上正在运行的IOS版本？🔔C
+ A.sh IOS  B.sh flash  C.sh version  D.sh running-config
+
+ (9)成功完成密码恢复后，应该如何配置寄存器的值，来让路由器返回正常的操作过程？🔔C
+ A.0x2100  B.0x2101  C.0x2102  D.0x2142
+
+ (10)你在路由器上使用copy running-config startup-config命令保存配置文件并重启了路由器。然而，该路由器却使用一个空白配置完成了启动。问题可能出在哪里？🔔C
+ A.你没有使用正确的命令启动路由器
+ B.NVRAM有问题
+ C.配置寄存器的设置不正确
+ D.新升级的IOS与路由器的硬件不兼容
+ E.你保存的配置与硬件不兼容
+
+ (11)如果想在同一时刻拥有多个Telnet会话，你需要使用什么样的按键组合？🔔D
+ A.Tab＋空格键  B.CtrI+X，然后按下6  C.Ctrl+Shift+X，然后按下6  D.Ctrl+Shift+6，然后按下X
+
+ (12)在远程登录某台远程设备时没能成功，但是可以远程登录较近的路由器，并且你仍能ping此远程设备。可能出现了什么问题？(选择其中的两个) 🔔B、D
+ A.IP地址不正确  B.访问控制列表过滤了Telnet  C.存在一条有缺陷的串行电缆  D.VTY口令没有设置
+
+ (13)命令show hosts将会给出什么信息？(选择其中的两个) ❗️A、D
+ A.临时DNS表项
+ B.使用hostname命令创建的路由器名字
+ C.被允许访问路由器的工作站的IP地址
+ D.使用ip host命令创建的、永久的名字到地址的映射
+ E.某主机通过Telnet连接到路由器的时间长度
+
+ (14)哪3个命令可以用于检查路由器上的局域网连接性问题？🔔A、B、D
+ A.show interfaces  B.show ip route  C.tracert  D.ping  E.dns lookups
+
+ (15)你远程登录某台路由器，并完成对配置的必要修改，现在想结束此Telnet会话，你需要输入什么命令？🔔D
+ A.close  B.disable  C.disconnect  D.exit
+
+ (16)远程登录某个设备并输人debug ip rip命令，但是并没有得到来自此debug命令的输出。可能了什么问题？🔔C
+ A.你必须首先输人show ip rip命令
+ B.此网络上的IP编址不正确
+ C.你必须使用terminal monitor命令
+ D.调试输出只能发送给控制台
+
+ (17)哪个命令可以用于显示配置寄存器的设置？🔔C
+ A.show ip route  B.show boot version  C.show version  D.show flash
+
+ (18)你需要获得位于夏威夷州的某台远程交换机的IP地址。怎样才能找出这一地址？🔔E
+ A.飞到夏威夷，连接到交换机的控制台，然后放松一下，在太阳伞下小酌一杯
+ B.在连接到此交换机的路由器上使用show ip route命令
+ C.在连接到此交换机的路由器上使用show cdp neighbor命令
+ D.在连接到此交换机的路由器上使用show ip arp命令
+ E.在连接到此交换机的路由器上使用show cdp neighbors detail命令
+
+ (19)你将自己的笔记本电脑直接连接到了某台路由器的以太网端口。要成功运行copy flash tftp命令，还需要满足下列哪些条件？(选择其中三个) 🔔D、E、F ❗️B、D、E
+ A.在此路由器上必须运行有TFTP服务器软件
+ B.在你的笔记本电脑上必须运行有TFTP服务器软件
+ C.将笔记本电脑直接连接到路由器的以太网端口的以太网电缆必须是一条直通电缆
+ D.此笔记本电脑必须与路由器的以太网接口位于相同的子网中
+ E.命令copy flash tftp必须使用笔记本电脑的IP地址
+ F.在路由器的闪存中必须有足够空间容纳被复制的文件
+
+ (20)配置寄存器的设置0x2102为路由器提供了什么功能？🔔C
+ A.告诉路由器要引导到ROM监控模式中
+ B.提供口令恢复
+ C.告诉路由器要查看NVRAM来决定引导顺序
+ D.从某个TFTP服务器上引导IOS
+ E.引导保存在ROM中的IOS映像

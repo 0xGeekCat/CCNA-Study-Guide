@@ -1,0 +1,65 @@
+书面实验7.1
+
+ (1)复制思科IOS文件到TFTP服务器的命令是什么？
+ 🔔copy flash tftp
+
+ (2)复制思科启动配置文件到TFTP服务器的命令是什么？
+ 🔔copy startup-config tftp
+
+ (3)复制思科启动配置文件到DRAM的命令是什么？
+ 🔔copy startup-config running-config
+
+ (4)复制思科启动配置文件到DRAM的老版本命令是什么？
+ 🔔config mem
+
+ (5)在路由器的提示符下使用什么命令可以查看相邻路由器的IP地址？
+ 🔔show cdp neighbor detail or show cdp entry *
+
+ (6)使用什么命令可以查看路由器的本地接口以及相邻路由器的主机名、平台和远程端口？
+ 🔔show cdp neighbor
+
+ (7)按什么组合键可以同时远程连接多台设备？
+ 🔔Ctrl+Control+6 and X
+
+ (8)使用什么命令可以显示与相邻设备和远程设备的、活动的Telnet连接？
+ ❗️show sessions
+
+ (9)使用什么命令可以升级思科的IOS?
+ 🔔copy tftp flash
+
+ (10)使用什么命令可以将备份配置文件和RAM中的配置文件合并？
+ 🔔copy tftp running-config
+
+
+书面实验7.2
+辨别下列文件在默认时被存储在路由器的那个位置上
+
+ (1)Cisco IOS
+ 🔔EEPROM
+
+ (2)bootstrap
+ 🔔ROM
+
+ (3)startup-config
+ 🔔NVRAM
+
+ (4)POST
+ 🔔ROM
+
+ (5)running-config
+ ❗️RAM
+
+ (6)ARP缓存
+ 🔔RAM
+
+ (7)微型IOS
+ 🔔ROM
+
+ (8)ROM监控程序
+ 🔔ROM
+
+ (9)路由表
+ 🔔RAM
+
+ (10)分组缓存
+ 🔔RAM
